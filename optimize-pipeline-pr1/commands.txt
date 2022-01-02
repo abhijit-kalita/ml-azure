@@ -1,0 +1,11 @@
+Commands used in video:
+---- update a system
+sudo apt-get update
+---- install UI XFCE4
+sudo apt-get install xfce4
+---- install XRDP - remote desktop
+sudo apt-get install xrdp
+---- register xrdp in xfce4
+echo xfce4-session ＞ ~/.xsession
+---- restart an XRDP
+sudo service xrdp restart

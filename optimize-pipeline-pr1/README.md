@@ -7,8 +7,14 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+The dataset contains data about a bank marketing campaign.
+The marketing campaign is based on calls.
+There is data on targetted marketing  audience like age , marital status, education, whether previousy contacted or not etc
+Based on this the outcome on whether there was a subcription to the campaign or not and its prediction is the end objective.
+
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**

@@ -80,6 +80,14 @@ and resources scarce.Smaller values of Inverse of regularization cause
 stronger regularization.
 
 A RandomSampler specified with an early stopping policy
+Benefit of using a random sampler:
+The RandomSampler supports continuous and descrete variable with early termination of low performance runs.
+With this method some random sampling can be done in the search space and then based on this the search space can be refined to improve the results.
+The random sampler is less resource intensive. The other options  are grid sampling searches over the entire grid space and bayesian sampling which 
+gives best results if number of runs are 20 times more than hyperparams being tuned and also is less suited for parallelism as new results depend on previous \
+results .
+
+
 A ScriptRunConfig estimator object is created with the training 
 file, compute target and environment ocjects as principal inputs.
 Finally a Hyperdrive pipeline object is created with above 

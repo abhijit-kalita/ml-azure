@@ -114,4 +114,9 @@ Use other sampling methods such as grid sampling which will lead to more hyperpa
 Increase number of iterations for optimization of target feature which wll allow more steps for maximizing resukts though adfter a certain number of steps this can remain constant
 Use different ML algrorithms and estimators which provide other basic approaches and probably better results
 
-
+## References
+- [Dataset source url](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+- [About Bandit policy](https://azure.github.io/azureml-sdk-for-r/reference/bandit_policy.html)
+- [Ml Pipeline architecture](https://towardsdatascience.com/architecting-a-machine-learning-pipeline-a847f094d1c7)
+- [Sampling methods](https://www.qualtrics.com/uk/experience-management/research/sampling-methods/?rid=ip&prevsite=en&newsite=uk&geo=FR&geomatch=uk)
+- [Refresher about hyperparameter optimization](https://towardsdatascience.com/hyperparameters-optimization-526348bb8e2d)

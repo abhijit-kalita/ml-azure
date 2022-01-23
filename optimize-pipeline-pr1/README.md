@@ -79,7 +79,18 @@ number of iterations is  used as accuracy is not of paramount importance
 and resources scarce.Smaller values of Inverse of regularization cause
 stronger regularization.
 
-A RandomSampler specified with an early stopping policy
+A RandomSampler specified with an early stopping policy.
+The random sampling method is the algorithm used for the hyperparameter tuning
+ps = RandomParameterSampling(
+    {
+        '--C' : choice(0.001,0.01,0.1,1,10,20,50,100,200,500,1000),
+        '--max_iter': choice(50,100,200,300)
+    }
+)
+
+The random sampler is parameterised with C wich is Inverse of regularization strength. Smaller values of C cause stronger regularization
+and max_iter which is Maximum number of iterations to converge
+
 Benefit of using a random sampler:
 The RandomSampler supports continuous and descrete variable with early termination of low performance runs.
 With this method some random sampling can be done in the search space and then based on this the search space can be refined to improve the results.

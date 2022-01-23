@@ -95,8 +95,10 @@ And at the end of the run we a list of models with the best models also having a
 After the completion of the ml runs with the two processes
 it is seen that the auto ml run performed a little better.
 Though the difference was marginal.
-Hyperdrive accuracy:.91162405
-Automl accuracy: .91781
+
+Hyperdrive accuracy=.91162405
+
+Automl accuracy= .91781
 The VotingEnsemble algorithm algrithm provided the best accuracy.
 
 

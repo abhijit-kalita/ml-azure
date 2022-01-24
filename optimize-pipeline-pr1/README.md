@@ -104,6 +104,11 @@ file, compute target and environment ocjects as principal inputs.
 Finally a Hyperdrive pipeline object is created with above 
 ScriptRunConfig object, metric to optimise/maximize, policy, number of runs 
 
+Classification algorithm: As the aim of the project is to determine whether a given customer will subscribe to the program or not ( Y/N prediction)
+so it is a classification problem. So Logistic regression will be well suited to solve this problem. The output of a Logistic regression problem
+is a set of binary values ( 0 or 1) . In this case it is well suited to the problem on hand as our prediction values is a binary set (Y/N).
+So 0 will correspond  to N and 1 to Y.
+
 ## AutoML run
 For the automl run, a pipeline config is created of classification
 task type, primary metric as accuracy , the input training data 
@@ -113,6 +118,13 @@ The best model generated based on the AutoML run was a Voting Ensemble model wit
 The features which has most significat impact on the best model accuracy were duration, nr employed, cons.conf.idx and emp.var.rate.
 Some other metrics for the model were AUC_weighted=.94874, AUC_macro=.94874,  AUC_micro=.98113, f1_score_macro=.778, balanced_accuracy=0.76,
 weighted_accuracy=.957
+
+Weights generated for the fitted automl run: The way in which a logic regression makes a bionomial prediction
+is by using weighted importance of features. We can see in the printed output of the jupyter notebook the weights calculated for the fitted model for automl run.
+The weighted sum of the features gives a value which will tend towards 1 or 0 therey enabling the prediction.
+The weights calculated in the automl run gives due importance to the features which leads to the accuracy of the overall classification.
+For example in our dataset high importance if given to "duration" feature then the weighted value calculated for duration  will be high.
+This makes sense as if someone has entertained a long phone call it implies the prospective customer is interested and hence likely to subscribe to the campaign.
 
 
 ## Pipeline comparison

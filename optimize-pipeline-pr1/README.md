@@ -104,10 +104,15 @@ file, compute target and environment ocjects as principal inputs.
 Finally a Hyperdrive pipeline object is created with above 
 ScriptRunConfig object, metric to optimise/maximize, policy, number of runs 
 
+## AutoML run
 For the automl run, a pipeline config is created of classification
 task type, primary metric as accuracy , the input training data 
 and targetted column for prediction . Also explanation mode is turned on.
 And at the end of the run we a list of models with the best models also having an explanation attached.
+The best model generated based on the AutoML run was a Voting Ensemble model with .91781 accuracy.
+The features which has most significat impact on the best model accuracy were duration, nr employed, cons.conf.idx and emp.var.rate.
+Some other metrics for the model were AUC_weighted=.94874, AUC_macro=.94874,  AUC_micro=.98113, f1_score_macro=.778, balanced_accuracy=0.76,
+weighted_accuracy=.957
 
 
 ## Pipeline comparison
